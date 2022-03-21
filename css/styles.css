@@ -2,6 +2,7 @@
   --primary-bgd-color: #ffffff;
   --border-color: rgb(170, 166, 166);
   --icon-bgd-color: rgba(170, 166, 166, 0.3);
+  --selection-bgd-color: rgba(170, 166, 166, 0.7);
 
   --text-logo-color: rgba(170, 166, 166);
   --primary-text-color: #4e4646;
@@ -171,16 +172,20 @@
 }
 
 .submenu .item {
+  position: relative;
   min-width: 220px;
   height: 30px;
+
   margin: 0;
   padding: 10px;
 }
 
 .menu-link {
   display: block;
+
   width: 100%;
   height: 100%;
+
   text-decoration: none;
   color: var(--primary-text-color);
 }
@@ -190,6 +195,8 @@
   top: 0;
   left: 100%;
   display: none;
+  min-width: 220px;
+  height: max-content;
 
   padding: 0;
   margin: 0;
@@ -203,11 +210,10 @@
   color: var(--primary-text-color);
 }
 
-.catalog-list:hover .submenu,
-.menu.button:focus .submenu {
+.catalog-list:hover .submenu {
   display: block;
 }
 
-/* .submenu .item:nth-child(n):hover <.submenu1 {
+.submenu .item:nth-child(n):hover > .submenu1 {
   display: block;
-} */
+}
