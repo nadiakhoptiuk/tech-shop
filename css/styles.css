@@ -214,6 +214,10 @@
   display: block;
 }
 
+.catalog-list:hover {
+  background-color: var(--selection-bgd-color);
+}
+
 .submenu .item:nth-child(n):hover > .submenu1 {
   display: block;
 }
