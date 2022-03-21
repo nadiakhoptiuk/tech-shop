@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="page">
     
     <!-- Header section -->
     <header class="header container">
@@ -20,7 +20,60 @@
             <a href="./index.html" class="logo"><span class="seq">Seq</span>Control</a>
 
             <!-- Main navigation -->
-            <button class="menu button">Каталог</button>
+            <div class="catalog-list">
+                <a href="" class="menu button">Каталог</a>
+
+                <!-- Catalog list -->
+                <ul class="submenu">
+                    <li class="item"><a href="" class="menu-link">IP відеонагляд</a>
+                        <ul class="submenu1">
+                            <li><a href="">IP-відеокамери</a></li>
+                            <li><a href="">IP-реєстратори</a></li>
+                            <li><a href="">Аксесуари</a></li>
+                            <li><a href="">Комплекти відеосистем</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="item"><a href="" class="menu-link">TVI&CVI відеонагляд</a>
+                        <ul class="submenu1">
+                            <li>TVI&CVI-відеокамери</li>
+                            <li>TVI&CVI-реєстратори</li>
+                            <li>Аксесуари TVI&CVI</li>
+                            <li>Комплекти відеосистем</li>
+                        </ul>
+                    </li>
+                
+                    <li class="item"><a href="" class="menu-link">Домофони</a>
+                        <!-- <ul class="submenu1">
+                            <li>IP-відеодомофони</li>
+                            <li>Відеодомофони</li>
+                        </ul> -->
+                    </li>
+                
+                    <li class="item"><a href="" class="menu-link">Жорсткі диски (HDD)</a></li>
+                
+                    <li class="item"><a href="" class="menu-link">Кабель</a>
+                        <!-- <ul class="submenu1">
+                            <li>Вита пара</li>
+                            <li>Сигнальний кабель</li>
+                            <li>Коаксіальний кабель</li>
+                            <li>Силовий кабель</li>
+                        </ul> -->
+                    </li>
+                
+                    <li class="item"><a href="" class="menu-link">Контроль доступу</a>
+                        <!-- <ul class="submenu1">
+                            <li>Біометричні СКД</li>
+                            <li>Замки, кнопки</li>
+                            <li>Картки, брелки</li>
+                            <li>Контролери, модулі</li>
+                            <li>Зчитувачі СКД</li>
+                            <li>Інше</li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div>
+            
 
             <!-- Search -->
             <div class="search">
@@ -62,6 +115,8 @@
             </ul>
         </nav>
     </header>
+
+    
 
 </body>
 </html>
