@@ -217,3 +217,7 @@
 .submenu .item:nth-child(n):hover > .submenu1 {
   display: block;
 }
+
+.submenu .item:nth-child(n):hover {
+  background-color: var(--selection-bgd-color);
+}
