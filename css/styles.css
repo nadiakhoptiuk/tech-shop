@@ -1,7 +1,7 @@
 :root {
   --primary-bgd-color: #ffffff;
   --border-color: rgb(170, 166, 166);
-  --icon-bgd-color: rgb(233, 230, 230);
+  --icon-bgd-color: rgb(238, 237, 237);
   --selection-bgd-color: rgb(212, 211, 211);
 
   --text-logo-color: rgb(170, 166, 166);
@@ -22,12 +22,31 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  /* outline: 1px solid pink; */
 }
 
 /* List styles */
 .list {
   list-style: none;
   padding: 0;
+}
+
+.item {
+  position: relative;
+}
+
+.link[aria-label]:hover:after {
+  position: absolute;
+  top: 105%;
+  right: 50%;
+
+  content: attr(aria-label);
+  text-align: center;
+  color: var(--primary-text-color);
+  background-color: var(--icon-bgd-color);
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 /* Header section */
@@ -154,6 +173,8 @@
 /* Catalog list */
 .catalog-list {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .submenu {
