@@ -87,11 +87,13 @@
             
                 <!-- Personal account -->
                 <ul class="account list">
-                    <li class="item"><a href="" class="authorization link" aria-label="Увійти" >
+                    <li class="item">
+                        <button class="authorization link" aria-label="Увійти" data-modal-open>
                             <svg class="icon" width="50" height="50">
                                 <use href="./images/sprite.svg#user-icon"></use>
                             </svg>
-                        </a></li>
+                        </button>
+                    </li>
             
                     <li class="item"><a href="" class="cart link" aria-label="Корзина">
                             <svg class="icon" width="50" height="50">
@@ -118,5 +120,39 @@
         </div>
     </header>
 
+    <!-- Modal window-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <h2 class="enter title">Вход</h2>
+
+            <button class="close-button" data-modal-close>
+                <svg class="close-icon" width="30" height="30">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+
+            <form>
+                <label class="form-field">
+                    Ел. пошта
+                    <input class="input" type="email" name="email">
+                </label>
+
+                <label class="form-field">
+                    Пароль
+                    <input class="input" type="password" name="password" minlength="8" maxlength="8">
+                </label>
+
+                <label class="form-field">
+                    <input class="checkbox" type="checkbox" name="remember">
+                    Запам'ятати мене
+                </label>
+            </form>
+            
+            <button type="submit">Увійти</button>
+            <button type="button">Зареєструватися</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
